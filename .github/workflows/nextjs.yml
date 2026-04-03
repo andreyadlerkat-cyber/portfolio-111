@@ -35,7 +35,7 @@ jobs:
       - name: Build (Next.js static export)
         env:
           GITHUB_PAGES: true
-        run: npx --no-install next build
+        run: npm: run build
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
